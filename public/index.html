@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BURGERS</title>
+    <link rel="stylesheet" href="./assets/css/burger_style.css" type="tex/css">
+    <title>Eat-the-burger!</title>
+
 </head>
+
 <body>
-    <h1>Burgers!</h1>
+    <h1>Eat-the-burger!</h1>
+
+    <h2>Add a Burger</h2><br>
+    <form class="create-form">
+        <div class="form-group">
+            <label for="addBurger">Add Burger:</label>
+            <input type="text" id="addBurger" name="name">
+        </div><br>
+        <button type="submit">Add Burger</button>
+    </form>
+
+    <h2>Burgers ready to be devoured!</h2>
+    
+    <ul id="burgers"></ul>
+
+    <h2>Devoured Burgers!</h2>
+
+    <ul id="devouredBurgers"></ul>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="./assets/js/burgers.js"></script>
 </body>
+
 </html>
