@@ -25,12 +25,12 @@ $(function () {
         }
 
         function devouredBurger() {
-            var new_elem = `<li> ${burgers[i].id}. ${burgers[i].burger_names} <button class='delete-burger' data-id=${burgers[i].id}>DELETE</button></li>`;
+            var new_elem = `<ul> ${burgers[i].id}. ${burgers[i].burger_names} <button class='delete-burger' data-id=${burgers[i].id}>DELETE</button></ul><br>`;
             devouredBurgerElem.append(new_elem);
         }
 
         function waitingBurgers(burgerStatus) {
-            var new_elem = `<li> ${burgers[i].id}. ${burgers[i].burger_names} <button class='devour-burger' data-id=${burgers[i].id} data-newstate=${burgerStatus}>Devour</button></li>`;
+            var new_elem = `<ul> ${burgers[i].id}. ${burgers[i].burger_names} <button class='devour-burger' data-id=${burgers[i].id} data-newstate=${burgerStatus}>Devour</button></ul><br>`;
             burgerElem.append(new_elem);
             // console.log(burgerStatus);
         }
