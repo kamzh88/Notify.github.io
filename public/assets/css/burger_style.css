@@ -1,5 +1,22 @@
-.styling{
-    font-size: 20px;
-    background-color: green;
-    color: green;
+
+
+.header-style{ 
+    text-align: center;
+}
+
+.body-style{
+    text-align: center;
+}
+
+.body-style2{
+    text-align: center;
+    margin-right: 160px;
+}
+
+#burgers{
+    text-align: left;
+}
+
+#devouredBurgers{
+    text-align: left;
 }

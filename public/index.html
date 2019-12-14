@@ -7,36 +7,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/burger_style.css" type="tex/css">
+    <link rel="stylesheet" href="./assets/css/burger_style.css" type="text/css">
     <title>Eat-the-burger!</title>
 
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
-            <h1>EAT-THE-BURGER!</h1>
+        <div class="jumbotron">
+            <h1 class="text-center">EAT-THE-BURGER!</h1>
         </div>
-        <div class="row">
-            <h2>Add a Burger</h2><br>
+        <div class="card">
+            <div class="card-header">
+                <h2 class="header-style">Add a Burger</h2><br>
+            </div>
+            <div class="card-body">
+                <form class="create-form">
+                    <div class="form-group">
+                        <label for="addBurger">Burger Name:</label>
+                        <input type="text" id="addBurger" name="name">
+                    </div>
+                    <button type="submit">Add Burger</button>
+                </form>
+            </div>
         </div>
-        <div class="row">
-            <form class="create-form">
-                <div class="form-group">
-                    <label for="addBurger">Add Burger:</label>
-                    <input type="text" id="addBurger" name="name">
-                </div><br>
-                <button type="submit">Add Burger</button>
-            </form>
-        </div>
-
+        <br><br>
         <div class="row">
             <div class="col-lg-6">
-                <h2>Burgers ready to be devoured!</h2>
+                <h2 class="body-style">Burgers ready to be devoured!</h2>
                 <ul id="burgers"></ul>
             </div>
             <div class="col-lg-6">
-                <h2>Devoured Burgers!</h2>
+                <h2 class="body-style2">Devoured Burgers!</h2>
                 <ul id="devouredBurgers"></ul>
             </div>
         </div>
